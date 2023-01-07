@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Servo Motor Control</title>
+  <!-- Load the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Create a slider to control the servo angle -->
+  <input type="range" min="0" max="180" step="1" value="90" id="servo-slider">
+  <span id="servo-angle">90</span>°
+
+  <!-- Add a button to send the servo angle to the ESP8266 -->
+  <button onclick="sendAngle()">Send</button>
+
+  <!-- Add a placeholder for the status messages -->
+  <div id="status"></div>
+</body>
+</html>
